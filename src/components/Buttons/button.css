@@ -1,0 +1,23 @@
+.rswBtn {
+  cursor: pointer;
+
+  background: transparent;
+  color: #222;
+
+  outline: none;
+  border: 0;
+
+  height: 2em;
+  width: 2em;
+  font-size: 1em;
+
+  padding: 0;
+}
+
+.rswBtn:hover {
+  background: #eaeaea;
+}
+
+.rswBtn[data-active='true'] {
+  background: #e0e0e0;
+}

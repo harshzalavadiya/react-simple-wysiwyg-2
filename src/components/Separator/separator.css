@@ -1,0 +1,6 @@
+.rswSeparator {
+  display: flex;
+  align-self: stretch;
+  border-right: 1px solid #ddd;
+  margin: 0 0.5rem;
+}

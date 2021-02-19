@@ -1,0 +1,78 @@
+{
+  "name": "react-simple-wysiwyg",
+  "version": "1.0.2",
+  "description": "Simple and lightweight React WYSIWYG editor",
+  "author": "Alexey Prokhorov",
+  "license": "MIT",
+  "bugs": "https://github.com/megahertz/react-simple-wysiwyg/issues",
+  "homepage": "https://github.com/megahertz/react-simple-wysiwyg#readme",
+  "repository": "megahertz/react-simple-wysiwyg",
+  "module": "dist/react-simple-wysiwyg.esm.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "size-limit": [
+    {
+      "path": "dist/react-simple-wysiwyg.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-simple-wysiwyg.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@size-limit/preset-small-lib": "^4.9.2",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addons": "^6.1.18",
+    "@storybook/react": "^6.1.18",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "babel-loader": "^8.2.2",
+    "husky": "^5.0.9",
+    "postcss": "^8.2.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-is": "^17.0.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "size-limit": "^4.9.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.5"
+  }
+}
